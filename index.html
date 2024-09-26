@@ -1,52 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>формы короче да шщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщшщ</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>чтотокороче</title>
+    <style>
+        .btn {
+            background-color: #000;
+            color: #FFF;
+            border-radius: 6px;
+        }
+        .btn:hover {
+            background-color: darkblue;
+        }
+        .green {
+            color: green;
+        }
+        .red {
+            color: red; 
+        }
+        .orange {
+            color: orange;
+        }
+    </style>
+</head>
 
-    <body>
-        <form>
-            <p>Username</p>
-            <input type="text">
+<body>
+    <form>
+        <p>Username</p>
+        <input type="text">
 
-            <br>
-            
-            <p>Email</p>
-            <input type="email">
-            
-            <br>
+        <br>
 
-            <p>Password</p>
-            <input type="password">
+        <p>Email</p>
+        <input type="email">
 
-            <br>
+        <br>
 
-            <p>Number</p>
-            <input type="number">
+        <p>Password</p>
+        <input type="password">
 
-            <hr>
+        <br>
 
-            <p>Checkbox test</p>
-            <input type="checkbox">
+        <p>Number</p>
+        <input type="number">
 
-            <br>
+        <hr>
 
-            <p>File Load test</p>
-            <input type="file">
+        <p>Checkbox test</p>
+        <input type="checkbox">
 
-            <br>
+        <br>
 
-            <p>Text (preloaded)</p>
-            <input typ="text" value="Here's preloaded text :)">
+        <p>File Load test</p>
+        <input type="file">
 
-            <br><br><br><br><br>
-            <hr>
+        <br>
 
-            <button type="submit">Send data</button>
-        </form>
-    </body>
+        <p>Text (preloaded)</p>
+        <input type="text" value="Here's preloaded text :)">
+
+        <br><br><br><br><br>
+        <hr>
+
+        <button type="submit">Send data</button>
+    </form>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <form>
+        <h2>Username</h2>
+        <input type="text" name="username" value="">
+
+        <br>
+
+        <h2>Password</h2>
+        <input type="password" name="passwd" value="">
+
+        <br>
+
+        <h2>Email</h2>
+        <input type="email" name="mail" value="">
+        <button type="submit">Send data</button>
+    </form>
+
+    <br><br><br>
+    <hr>
+    <br><br><br>
+
+    <form>
+        <h2>Выбор сеанса</h2>
+        <p>Кинотеатр</p>
+        <input type="text" name="cinema" placeholder="Введите название кинотеатра..." required>
+
+        <p>Фильм</p>
+        <input type="text" name="film" placeholder="Введите название фильма..." required>
+
+        <p>Время</p>
+        <input type="time" name="time" required>
+
+        <p>Стоимость</p>
+        <input type="number" name="cost" placeholder="Укажите стоимость..." required>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+
+    <hr>
+    <br><br><br><br><br>
+
+    <form>
+        <h2>Кто такой Джамал.mp4?</h2>
+        <label class="green">
+            <input type="checkbox" name="yes" value="yesdzamalofcourse" checked>Да
+        </label>
+
+        <br>
+
+        <label class="red">
+            <input type="checkbox" name="no" value="nodzamalisnotdzamalhnik" disabled>Нет
+        </label>
+
+        <br>
+
+        <label class="orange">
+            <input type="checkbox" name="maybe" value="jdhugierk" autofocus>Мб
+        </label>
+
+        <br>
+        <br>
+        
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+    <br><br><br><br><br>
+    <form>
+        <h2>Кто такой Джамал.mp4?</h2>
+        <label class="green">
+            <input type="radio" name="yes" value="yesdzamalofcourse">Да
+        </label>
+    
+        <br>
+    
+        <label class="red">
+            <input type="radio" name="no" value="nodzamalisnotdzamalhnik" disabled>Нет
+        </label>
+    
+        <br>
+    
+        <label class="orange">
+            <input type="radio" name="maybe" value="jdhugierk">Мб
+        </label>
+    
+        <br>
+        <br>
+    
+        <button type="submit" class="btn">Отправить</button>
+    </form>
+</body>
 
 </html>
